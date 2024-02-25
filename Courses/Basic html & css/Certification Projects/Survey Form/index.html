@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Honeycuttz Survey</h1>
+    <p id="description">FreeCodeCamp Build a Survey Form Project</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">
+          Name: <input id="name" type="text" placeholder="Enter your name" required/>
+        </label>
+        <label for="email" id="email-label">
+          Email: <input id="email" type="email" required placeholder="Enter your Email"/>
+        </label>
+        </fieldset>
+        <fieldset>
+          <label for="happy"><input id="happy" type="radio" name="emotion-type" value="9" checked class="inline"/> Happy</label>
+        <label for="sad"><input id="sad" type="radio" class="inline" name="emotion-type" value="8"/> Sad</label>
+        </fieldset>
+        <fieldset>
+          <label>
+            <input type="checkbox" value="1" class="inline block"> Hungry</input>
+            <input type="checkbox" value="2" class="inline block"> Tired</input>
+            <input type="checkbox" value="3" class="inline block"> Nothing</input>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="number" id="number-label">
+          Age: <input id="number" type="number" min="13" max="120" placeholder="Age">
+        </label>
+        <label>
+          Gender: <select id="dropdown">
+            <option value="">(select one)</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <textarea></textarea>
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>
